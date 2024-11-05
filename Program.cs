@@ -88,7 +88,15 @@ namespace HttpMethodsExample
     }
 
     // DELETE :
-    
+    private static async Task DeletePostAsync()
+    {
+      Console.WriteLine("DELETE Request");
+      HttpResponseMessage response = await client.DeleteAsync(url + "/1");
+      response.EnsureSuccessStatusCode();
+
+      Console.WriteLine("Post Deleted Succsessfully");
+      Console.WriteLine();
+    }
 
 
   }
