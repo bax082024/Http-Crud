@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Http-crud")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+999be3037576c6281340962fb2f9bebfa8e12eaf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85d45b2c3c5c172d958b2e3d6ba13700094c04c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Http-crud")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Http-crud")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
