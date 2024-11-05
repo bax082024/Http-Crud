@@ -58,6 +58,10 @@ namespace HttpMethodsExample
       StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
 
       HttpResponseMessage response = await client.PutAsync(url + "/1", content);
+
+      string responseBody = await response.Content.ReadAsStringAsync();
+      Console.WriteLine(responseBody);
+      Console.WriteLine();
       
     }
 
