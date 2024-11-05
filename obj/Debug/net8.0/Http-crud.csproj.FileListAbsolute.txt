@@ -1,0 +1,15 @@
+C:\HjemmeKode\C-Sharp\C-Sharp\Http-crud\bin\Debug\net8.0\Http-crud.exe
+C:\HjemmeKode\C-Sharp\C-Sharp\Http-crud\bin\Debug\net8.0\Http-crud.deps.json
+C:\HjemmeKode\C-Sharp\C-Sharp\Http-crud\bin\Debug\net8.0\Http-crud.runtimeconfig.json
+C:\HjemmeKode\C-Sharp\C-Sharp\Http-crud\bin\Debug\net8.0\Http-crud.dll
+C:\HjemmeKode\C-Sharp\C-Sharp\Http-crud\bin\Debug\net8.0\Http-crud.pdb
+C:\HjemmeKode\C-Sharp\C-Sharp\Http-crud\obj\Debug\net8.0\Http-crud.GeneratedMSBuildEditorConfig.editorconfig
+C:\HjemmeKode\C-Sharp\C-Sharp\Http-crud\obj\Debug\net8.0\Http-crud.AssemblyInfoInputs.cache
+C:\HjemmeKode\C-Sharp\C-Sharp\Http-crud\obj\Debug\net8.0\Http-crud.AssemblyInfo.cs
+C:\HjemmeKode\C-Sharp\C-Sharp\Http-crud\obj\Debug\net8.0\Http-crud.csproj.CoreCompileInputs.cache
+C:\HjemmeKode\C-Sharp\C-Sharp\Http-crud\obj\Debug\net8.0\Http-crud.sourcelink.json
+C:\HjemmeKode\C-Sharp\C-Sharp\Http-crud\obj\Debug\net8.0\Http-crud.dll
+C:\HjemmeKode\C-Sharp\C-Sharp\Http-crud\obj\Debug\net8.0\refint\Http-crud.dll
+C:\HjemmeKode\C-Sharp\C-Sharp\Http-crud\obj\Debug\net8.0\Http-crud.pdb
+C:\HjemmeKode\C-Sharp\C-Sharp\Http-crud\obj\Debug\net8.0\Http-crud.genruntimeconfig.cache
+C:\HjemmeKode\C-Sharp\C-Sharp\Http-crud\obj\Debug\net8.0\ref\Http-crud.dll

@@ -12,6 +12,9 @@ namespace HttpMethodsExample
     private static readonly HttpClient client = new HttpClient();
     private const string url = "https://jsonplaceholder.typicode.com/posts";
 
+    
+
+
     static async Task Main(string[] args)
     {
       await GetPostAsync();
@@ -23,15 +26,15 @@ namespace HttpMethodsExample
 
     // GET : 
     private static async Task GetPostAsync()
-    {
-      Console.WriteLine("GET Request:");
-      HttpResponseMessage response = await client.GetAsync(url + "1");
-      response.EnsureSuccessStatusCode();
+{
+    Console.WriteLine("GET Request for all posts:");
+    HttpResponseMessage response = await client.GetAsync(url);
+    response.EnsureSuccessStatusCode();
 
-      string responseBody = await response.Content.ReadAsStringAsync();
-      Console.WriteLine(responseBody);
-      Console.WriteLine();
-    }
+    string responseBody = await response.Content.ReadAsStringAsync();
+    Console.WriteLine(responseBody);
+    Console.WriteLine();
+}
 
     // POST :
     private static async Task CreatePostAsync()
