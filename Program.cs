@@ -20,7 +20,7 @@ namespace HttpMethodsExample
       await DeletePostAsync();
     }
 
-    // GET
+    // GET : 
     private static async Task GetPostAsync()
     {
       Console.WriteLine("GET Request");
@@ -31,6 +31,14 @@ namespace HttpMethodsExample
       Console.WriteLine(responseBody);
       Console.WriteLine();
     }
+
+    // POST :
+    private static async Task CreatePostAsync()
+    {
+      Console.WriteLine("POST Request");
+      var newPost = new { title = "foo", body = "bar", userId = 1};
+    }
+
 
   }
 
