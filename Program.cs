@@ -43,7 +43,10 @@ namespace HttpMethodsExample
       HttpResponseMessage response = await client.PostAsync(url, content);
       response.EnsureSuccessStatusCode();
 
-      
+      string responseBody = await response.Content.ReadAsStringAsync();
+      Console.WriteLine(responseBody);
+      Console.WriteLine();
+
     }
 
 
