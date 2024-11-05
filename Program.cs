@@ -37,6 +37,8 @@ namespace HttpMethodsExample
     {
       Console.WriteLine("POST Request");
       var newPost = new { title = "foo", body = "bar", userId = 1};
+      string json = JsonSerializer.Serialize(newPost);
+      StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
     }
 
 
