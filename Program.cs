@@ -80,7 +80,9 @@ namespace HttpMethodsExample
       HttpResponseMessage response = await client.SendAsync(request);
       response.EnsureSuccessStatusCode();
 
-      
+      string responseBody = await response.Content.ReadAsStringAsync();
+      Console.WriteLine(responseBody);
+      Console.WriteLine();
     }
 
 
