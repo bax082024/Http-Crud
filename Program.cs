@@ -20,6 +20,18 @@ namespace HttpMethodsExample
       await DeletePostAsync();
     }
 
+    // GET
+    private static async Task GetPostAsync()
+    {
+      Console.WriteLine("GET Request");
+      HttpResponseMessage response = await client.GetAsync(url + "1");
+      response.EnsureSuccessStatusCode();
+
+      string responseBody = await response.Content.ReadAsStringAsync();
+      Console.WriteLine(responseBody);
+      Console.WriteLine();
+    }
+
   }
 
 }
