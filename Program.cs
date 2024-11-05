@@ -50,6 +50,7 @@ namespace HttpMethodsExample
 
     }
 
+    // UPDATE :
     private static async Task UpdatePostAsync()
     {
       Console.WriteLine("UPDATE Request:");
@@ -65,6 +66,7 @@ namespace HttpMethodsExample
       
     }
 
+    // PATCH :
     private static async Task PatchPostAsync()
     {
       Console.WriteLine("PATCH Request:");
@@ -84,6 +86,9 @@ namespace HttpMethodsExample
       Console.WriteLine(responseBody);
       Console.WriteLine();
     }
+
+    // DELETE :
+    
 
 
   }
