@@ -77,6 +77,9 @@ namespace HttpMethodsExample
         Content = content
       };
 
+      HttpResponseMessage response = await client.SendAsync(request);
+      response.EnsureSuccessStatusCode();
+
       
     }
 
