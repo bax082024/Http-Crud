@@ -54,6 +54,10 @@ namespace HttpMethodsExample
     {
       Console.WriteLine("UPDATE Request:");
       var UpdatePost = new { id = 1, title = "updated foo", body = "updated bar", userId = 1};
+      string json = JsonSerializer.Serialize(UpdatePost);
+      StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
+
+      HttpResponseMessage response = await client.PutAsync(url + "/1", content);
       
     }
 
