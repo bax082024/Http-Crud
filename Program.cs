@@ -67,10 +67,17 @@ namespace HttpMethodsExample
 
     private static async Task PatchPostAsync()
     {
-      Console.WriteLine("PATCH Request");
-      var partialUpdate = new { title = "patched title"};
+      Console.WriteLine("PATCH Request:");
+      var partialUpdate = new { title = "patched title" };
       string json = JsonSerializer.Serialize(partialUpdate);
-      StringContent contentt = new StringContent(json, Encoding.UTF8, "application/json");
+      StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
+
+      HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Patch, url + "/1")
+      {
+        Content = content
+      };
+
+      
     }
 
 
