@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
@@ -23,7 +24,7 @@ namespace HttpMethodsExample
     // GET : 
     private static async Task GetPostAsync()
     {
-      Console.WriteLine("GET Request");
+      Console.WriteLine("GET Request:");
       HttpResponseMessage response = await client.GetAsync(url + "1");
       response.EnsureSuccessStatusCode();
 
@@ -35,7 +36,7 @@ namespace HttpMethodsExample
     // POST :
     private static async Task CreatePostAsync()
     {
-      Console.WriteLine("POST Request");
+      Console.WriteLine("POST Request:");
       var newPost = new { title = "foo", body = "bar", userId = 1};
       string json = JsonSerializer.Serialize(newPost);
       StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
@@ -47,6 +48,13 @@ namespace HttpMethodsExample
       Console.WriteLine(responseBody);
       Console.WriteLine();
 
+    }
+
+    private static async Task UpdatePostAsync()
+    {
+      Console.WriteLine("UPDATE Request:");
+      var UpdatePost = new { id = 1, title = "updated foo", body = "updated bar", userId = 1};
+      
     }
 
 
